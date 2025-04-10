@@ -2,85 +2,89 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <title>Fábia Oliveira - Imóveis à Venda</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fábia Oliveira - Imóveis</title>
   <style>
     body {
       font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
       margin: 0;
       padding: 0;
-      background-color: #f5f5f5;
     }
     header {
-      background-color: #2e3b55;
+      background-color: #005f73;
       color: white;
       padding: 20px;
       text-align: center;
     }
-    nav {
-      background-color: #1d2738;
-      display: flex;
-      justify-content: center;
+    .intro {
+      padding: 20px;
+      text-align: center;
+      background-color: #e0fbfc;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 20px;
-      padding: 10px 0;
+      padding: 20px;
     }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 40px;
-    }
-    .imovel {
-      background: white;
+    .card {
+      background-color: white;
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      margin-bottom: 20px;
-      padding: 20px;
+      overflow: hidden;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card h3 {
+      margin: 15px 0;
+      color: #333;
+    }
+    .card a {
+      display: inline-block;
+      margin-bottom: 15px;
+      padding: 10px 20px;
+      background-color: #005f73;
+      color: white;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+    .card a:hover {
+      background-color: #0a9396;
     }
     footer {
       text-align: center;
       padding: 20px;
-      background-color: #2e3b55;
-      color: white;
+      background-color: #ccc;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Fábia Oliveira - Corretora de Imóveis</h1>
-    <p>Especializada em imóveis urbanos e rurais</p>
+    <h1>Fábia Oliveira</h1>
+    <p>Divulgação de imóveis com atendimento acolhedor e transparente</p>
   </header>
 
-  <nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#imoveis">Imóveis</a>
-    <a href="#contato">Contato</a>
-  </nav>
-
-  <section id="sobre">
-    <h2>Sobre Mim</h2>
-    <p>Sou Fábia Oliveira, corretora de imóveis apaixonada por ajudar pessoas a encontrarem o imóvel ideal. Trabalho com imóveis urbanos e rurais, prezando sempre pela confiança e profissionalismo.</p>
+  <section class="intro">
+    <p>Bem-vindo! Aqui você encontra ótimas oportunidades de imóveis à venda. Conheça as opções e entre em contato para mais informações.</p>
   </section>
 
-  <section id="imoveis">
-    <h2>Imóveis Disponíveis</h2>
-    <div class="imovel">
-      <h3>Casa em Carmo da Cachoeira - MG</h3>
-      <p>4 suítes grandes, 7 banheiros, várias salas, acessibilidade total. Ideal para casa de repouso. Valor: R$ 1.000.000</p>
+  <section class="container">
+    <div class="card">
+      <img src="images/terreno-casa-construcao-1.jpg" alt="Terreno com construção">
+      <h3>Terreno com casa em construção</h3>
+      <a href="terreno-construcao.html">Ver detalhes</a>
     </div>
-    <!-- Você pode adicionar mais blocos de imóvel aqui -->
-  </section>
-
-  <section id="contato">
-    <h2>Contato</h2>
-    <p>Entre em contato pelo WhatsApp: <a href="https://wa.me/55SEUNUMEROAQUI">Clique aqui</a></p>
-    <p>Email: contato@fabiaoliveira.com.br</p>
+    <!-- Novos imóveis podem ser adicionados aqui seguindo o mesmo padrão -->
   </section>
 
   <footer>
-    <p>&copy; 2025 Fábia Oliveira - Todos os direitos reservados</p>
+    <p>Contato: fabiaoliveira@exemplo.com | WhatsApp: (00) 00000-0000</p>
   </footer>
 </body>
 </html>
